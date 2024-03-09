@@ -1,0 +1,7 @@
+"0","v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
+"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'VetiverModel' is not defined
+"
+"0",""
