@@ -24,7 +24,7 @@ library(ggplot2)
 library(reticulate)
 project_dir <- getwd() # Or set this to a specific directory if needed
 venv_path <- file.path(project_dir, ".venv")
-python_path <- file.path(venv_path, "Scripts", "python.exe")
+python_path <- file.path(venv_path, "bin", "python.exe")
 
 Sys.setenv(RETICULATE_PYTHON = python_path)
 
