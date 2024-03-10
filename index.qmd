@@ -21,6 +21,7 @@ format:
 library(palmerpenguins)
 library(dplyr)
 library(ggplot2)
+library(reticulate)
 project_dir <- getwd() # Or set this to a specific directory if needed
 venv_path <- file.path(project_dir, ".venv")
 python_path <- file.path(venv_path, "Scripts", "python.exe")
