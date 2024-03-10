@@ -117,6 +117,18 @@ app = VetiverAPI(v, check_prototype=True)
 ## Chapter 6
 
 ```{python}
+import os
+ 
+# Path to the file you expect `prepare_docker()` to create
+file_path = 'app.py'
+file_path2= 'Dockerfile'
+ 
+# Check if the file exists and delete it if it does
+if os.path.exists(file_path):
+    os.remove(file_path)
+if os.path.exists(file_path2):
+    os.remove(file_path2)
+# Now call prepare_docker() without worrying about the file existing
 from vetiver import prepare_docker
 prepare_docker(b,'penguin_model')
 ```
@@ -129,6 +141,7 @@ from palmerpenguins import load_penguins
 
 con = duckdb.connect('my-db.duckdb')
 df = load_penguins()
+con.execute('DROP TABLE IF EXISTS penguins')
 con.execute('CREATE TABLE penguins AS SELECT * FROM df')
 con.close()
 ```
