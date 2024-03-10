@@ -21,9 +21,13 @@ format:
 library(palmerpenguins)
 library(dplyr)
 library(ggplot2)
-Sys.setenv(RETICULATE_PYTHON = "C:/Users/Isaac.Daniels/OneDrive - afacademy.af.edu/Final Project/.venv/Scripts/python.exe")
-library(reticulate)
-use_virtualenv("C:/Users/Isaac.Daniels/OneDrive - afacademy.af.edu/Final Project/.venv",required=TRUE)
+project_dir <- getwd() # Or set this to a specific directory if needed
+venv_path <- file.path(project_dir, ".venv")
+python_path <- file.path(venv_path, "Scripts", "python.exe")
+
+Sys.setenv(RETICULATE_PYTHON = python_path)
+
+use_virtualenv(venv_path, required = TRUE)
 
 df <- palmerpenguins::penguins
 ```
