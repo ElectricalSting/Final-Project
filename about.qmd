@@ -2,8 +2,5 @@
 title: "About"
 ---
 
-About this site
+This site works through DevOps for Data Science by Alex Gold as my Math 378 Final Project
 
-```{r}
-1 + 1
-```
