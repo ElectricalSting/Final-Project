@@ -74,7 +74,7 @@
     "href": "Model.html#chapter-2",
     "title": "Model",
     "section": "Chapter 2",
-    "text": "Chapter 2\n\n\nCode\nfrom vetiver import VetiverModel\nv = VetiverModel(model, model_name='penguin_model', prototype_data=X)\n\n\n\n\nCode\nfrom pins import board_folder\nfrom vetiver import vetiver_pin_write\nb = board_folder('data/model', allow_pickle_read=True)\np = vetiver_pin_write(b,v, versioned=True)\n\n\nModel Cards provide a framework for transparent, responsible reporting. \n Use the vetiver `.qmd` Quarto template as a place to start, \n with vetiver.model_card()\nWriting pin:\nName: 'penguin_model'\nVersion: 20240426T001028Z-d3492\n\n\n\n\nCode\nfrom vetiver import VetiverAPI\napp = VetiverAPI(v, check_prototype=True)"
+    "text": "Chapter 2\n\n\nCode\nfrom vetiver import VetiverModel\nv = VetiverModel(model, model_name='penguin_model', prototype_data=X)\n\n\n\n\nCode\nfrom pins import board_folder\nfrom vetiver import vetiver_pin_write\nb = board_folder('data/model', allow_pickle_read=True)\np = vetiver_pin_write(b,v, versioned=True)\n\n\nModel Cards provide a framework for transparent, responsible reporting. \n Use the vetiver `.qmd` Quarto template as a place to start, \n with vetiver.model_card()\nWriting pin:\nName: 'penguin_model'\nVersion: 20240426T001615Z-d3492\n\n\n\n\nCode\nfrom vetiver import VetiverAPI\napp = VetiverAPI(v, check_prototype=True)"
   },
   {
     "objectID": "Model.html#chapter-6",
