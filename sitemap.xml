@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ElectricalSting.github.io/Final-Project/about.html</loc>
-    <lastmod>2024-03-10T18:46:26.112Z</lastmod>
+    <loc>https://ElectricalSting.github.io/Final-Project/Penguins EDA.html</loc>
+    <lastmod>2024-04-26T00:07:15.898Z</lastmod>
   </url>
   <url>
     <loc>https://ElectricalSting.github.io/Final-Project/index.html</loc>
-    <lastmod>2024-03-10T18:46:26.112Z</lastmod>
+    <lastmod>2024-04-26T00:07:15.902Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ElectricalSting.github.io/Final-Project/about.html</loc>
+    <lastmod>2024-04-26T00:07:15.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ElectricalSting.github.io/Final-Project/Model.html</loc>
+    <lastmod>2024-04-26T00:07:15.898Z</lastmod>
   </url>
 </urlset>
