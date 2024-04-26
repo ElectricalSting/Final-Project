@@ -6,7 +6,28 @@ format:
   html:
     code-fold: true
 ---
+```{python}
+from palmerpenguins import penguins
+from pandas import get_dummies
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn import preprocessing
+```
+```{r}
+library(palmerpenguins)
+library(dplyr)
+library(ggplot2)
+library(reticulate)
+project_dir <- getwd() # Or set this to a specific directory if needed
+venv_path <- file.path(project_dir, ".venv")
+python_path <- file.path(venv_path, "bin", "python")
 
+Sys.setenv(RETICULATE_PYTHON = python_path)
+
+use_virtualenv(venv_path, required = TRUE)
+
+df <- palmerpenguins::penguins
+```
 ## Penguin Size and Mass by Sex and Species
 
 ```{r}
